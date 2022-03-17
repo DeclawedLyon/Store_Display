@@ -1,0 +1,15 @@
+.category-display {
+  width: calc(100vw - 3em);
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2em;
+  column-gap: 2em;
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  padding-right: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
