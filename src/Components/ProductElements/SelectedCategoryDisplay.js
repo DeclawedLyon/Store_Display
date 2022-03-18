@@ -52,7 +52,7 @@ export default function SelectedCategoryDisplay(props) {
       <ProductSidebar />
       <div className="products-container">
         <ProductFilter />
-        <div className="redered-products">
+        <div className="rendered-products">
           {products}
         </div>
       </div>

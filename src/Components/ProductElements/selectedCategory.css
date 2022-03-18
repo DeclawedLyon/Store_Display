@@ -6,14 +6,18 @@
   margin-right: var(--display-padding);
   margin-bottom: var(--display-padding);
   height: var(--display-height);
-  overflow: scroll;
 }
 
 .products-container {
+  position: relative;
   padding-top: 1em;
   padding-right: 1em;
 }
-.redered-products {
+.rendered-products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  height: calc(100% - 1em);
+  width: 100%;
+  /* border-top: 1px solid rgba(128, 128, 128, 0.322); */
+  overflow: scroll;
 }
