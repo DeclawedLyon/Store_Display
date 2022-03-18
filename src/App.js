@@ -4,7 +4,7 @@ import { faker } from '@faker-js/faker';
 import CategoryDisplay from './Components/CategoryElements/CategoryDisplay';
 import NavBarHeader from './Components/NavigationElements/NavBarHeader';
 import { useState } from 'react';
-import SelectedCategoryDisplay from './Components/CategoryElements/SelectedCategoryDisplay';
+import SelectedCategoryDisplay from './Components/ProductElements/SelectedCategoryDisplay';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -29,9 +29,16 @@ function App() {
       setProductDisplay(false)
     }
   }
+
+  const returnHome = () => {
+    setMainDisplay(true);
+    setProductDisplay(false);
+  }
+
   return (
     <div className="App">
-      <NavBarHeader />
+      <NavBarHeader returnHome={returnHome}/>
+      
       {mainDisplay && <CategoryDisplay 
         mainDisplayToggle={setMainDisplay}
         categoryDisplayToggle={setProductDisplay}

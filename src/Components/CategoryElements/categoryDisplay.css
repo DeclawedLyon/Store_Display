@@ -1,15 +1,24 @@
+.App {
+  --display-padding: 1.5em;
+  --Display-width: calc(100vw - calc(var(--display-padding) * 2));
+  --display-height: calc(100vh - var(--navbar-height) - 2em);
+
+}
+
 .category-display {
   width: calc(100vw - 3em);
+  height: var(--display-height);
   border: 2px solid black;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 2em;
   column-gap: 2em;
-  padding-left: 1.5em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  padding-right: 1.5em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+  padding-left: var(--display-padding);
+  padding-top: var(--display-padding);
+  padding-bottom: var(--display-padding);
+  padding-right: var(--display-padding);
+  margin-left: var(--display-padding);
+  margin-right: var(--display-padding);
+  overflow: hidden;
 }

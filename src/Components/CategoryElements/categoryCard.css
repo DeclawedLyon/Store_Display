@@ -1,8 +1,8 @@
 .category-card {
   position: relative;
   border: 1px solid rgba(128, 128, 128, 0.438);
-  width: 250px;
-  height: 250px;
+  width: calc(var(--display-width) / 3.5);
+  height: calc(var(--display-height) / 3.6);
   cursor: pointer;
   margin: none;
   overflow: hidden;

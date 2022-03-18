@@ -1,0 +1,10 @@
+.selected-category-display {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 2px solid rgba(128, 128, 128, 0.308);
+  margin-left: var(--display-padding);
+  margin-right: var(--display-padding);
+  margin-bottom: var(--display-padding);
+  height: var(--display-height);
+  overflow: scroll;
+}

@@ -1,5 +1,20 @@
+.App {
+  --navbar-height: 100px
+}
+
 .navbar-top {
   display: flex;
+  height: var(--navbar-height);
   align-items: center;
   justify-content: space-between;
+}
+
+.company-logo {
+  width: 150px;
+  margin-left: 1em;
+}
+
+.logout-button {
+  padding-right: 2em;
+  padding-left: 1em;
 }

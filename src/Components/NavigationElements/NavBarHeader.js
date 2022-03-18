@@ -6,10 +6,10 @@ export default function NavBarHeader(props) {
 
   return (
     <nav className='navbar-top'>
-      <a href="#"><img src={silkPlantLogo}  alt='Company Logo'></img></a>
+      <a href="#" onClick={() => props.returnHome()}><img src={silkPlantLogo}  alt='Company Logo' className='company-logo'></img></a>
         <div>
-        <a href="cart">Cart</a>
-        <a href="login">Logout</a>
+        <a href="cart" className='cart-button'>Cart</a>
+        <a href="login" className='logout-button'>Logout</a>
       </div>
     </nav>
   )

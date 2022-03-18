@@ -1,7 +1,7 @@
 import './categoryCard.css'
 
 export default function CategoryDisplayCard(props) {
-  console.log(props.selectCategory)
+  // console.log(props.selectCategory)
   // const selectCategory = props.selectCategory()
   // console.log(selectCategory)
 
