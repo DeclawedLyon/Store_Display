@@ -9,18 +9,17 @@ export default function ProductCard(props) {
       <h2>{props.product.productName}</h2>
       <span>{props.product.sku}</span>
       <div className="regular-price">
-        <p>Regular Price</p>
+        <p>Regular Price:</p>
         <span>{props.product.price}</span>
       </div>
       <div className="sale-price">
-        <p>Sale Price</p>
+        <p>Sale Price:</p>
         <span>{props.product.sale}</span>
       </div>
       <div className="details-container">
         <p className="details">{props.product.description}</p>
-        <span>{props.product.specs}</span>
+        <span>Tags: {props.product.specs}</span>
       </div>
-      TREE STUFF HERE
     </div>
   )
 }

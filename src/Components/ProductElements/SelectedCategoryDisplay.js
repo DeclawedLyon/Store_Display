@@ -1,6 +1,7 @@
 import faker from "@faker-js/faker"
 import { useEffect, useState } from "react";
-import ProductCard from "./ProductDisplay";
+import ProductSidebar from "../NavigationElements/ProductSidebar";
+import ProductCard from "./ProductCard";
 import './selectedCategory.css'
 
 export default function SelectedCategoryDisplay(props) {
@@ -47,7 +48,10 @@ export default function SelectedCategoryDisplay(props) {
 
   return (
     <div className="selected-category-display">
-      {products}
+      <ProductSidebar />
+      <div className="products-container">
+        {products}
+      </div>
     </div>
   )
 }

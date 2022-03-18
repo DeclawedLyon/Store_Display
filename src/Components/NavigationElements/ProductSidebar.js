@@ -2,7 +2,7 @@ import './productSidebar.css'
 
 export default function (props) {
   return (
-    <nav className='sidebar'>
+    <nav className='product-sidebar'>
       <li>tag names go here:</li>
     </nav>
   )
