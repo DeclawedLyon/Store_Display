@@ -1,0 +1,7 @@
+.product-filter {
+  display: flex;
+  justify-content: space-between;
+}
+.rows-button {
+  transform: rotate(-90deg);
+}

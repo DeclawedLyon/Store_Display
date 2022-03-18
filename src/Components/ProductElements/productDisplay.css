@@ -11,9 +11,14 @@
   /* border: 2px solid rgba(128, 128, 128, 0.404); */
 }
 
+.product-card > * {
+  cursor: pointer;
+}
+
 .product-card > h2 {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
+  cursor: pointer;
 }
 
 .product-card > span {
