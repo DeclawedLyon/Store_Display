@@ -18,13 +18,36 @@ function App() {
   // console.log(randomProduct)
 
   const selectCategory = (categoryName) => {
-
+    if (mainDisplay === true) {
+      setMainDisplay(false);
+    } else {
+      setMainDisplay(true);
+    }
+    if (productDisplay === false) {
+      setProductDisplay(true)
+    } else {
+      setProductDisplay(false)
+    }
   }
   return (
     <div className="App">
       <NavBarHeader />
-      {mainDisplay && <CategoryDisplay mainDisplayToggle={setMainDisplay} categoryDisplayToggle={setProductDisplay} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>}
-      {productDisplay && <SelectedCategoryDisplay mainDisplayToggle={setMainDisplay} categoryDisplayToggle={setProductDisplay} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>}
+      {mainDisplay && <CategoryDisplay 
+        mainDisplayToggle={setMainDisplay}
+        categoryDisplayToggle={setProductDisplay}
+        selectedCategory={selectedCategory} 
+        setSelectedCategory={setSelectedCategory} 
+        selectCategory={selectCategory}
+        />
+      }
+
+      {productDisplay && <SelectedCategoryDisplay 
+        mainDisplayToggle={setMainDisplay} 
+        categoryDisplayToggle={setProductDisplay} 
+        selectedCategory={selectedCategory} 
+        setSelectedCategory={setSelectedCategory}
+        />
+      }
     </div>
   );
 }

@@ -15,6 +15,8 @@ export default function CategoryDisplay(props) {
   const dummyCategories = ['Art', 'Outdoor', 'Home Decor', 'Floral', 'Plants & Trees', 'Picks & Stems', 'Wall Decor', 'Clearance', 'Christmas & Seasonal']
   const [mainCategories, setMainCategories] = useState([]);
   const selectedCategory = props.selectedCategory
+  console.log('---',props)
+  
   // const [selectedCategory, setSelectedCategory] = useState('');
 
   useEffect(() => {
@@ -57,7 +59,15 @@ export default function CategoryDisplay(props) {
 
         return (
           <div key={`ck-${category}${x}`}>
-            {selectedCategory ? '' : <CategoryDisplayCard key={`ck-${category}${x}`} id={`ck-${category}`} categoryName={category} imageSource={image}/>}
+            {selectedCategory ? '' : <CategoryDisplayCard 
+              key={`ck-${category}${x}`} 
+              id={`ck-${category}`} 
+              categoryName={category} 
+              imageSource={image}
+              // setCategory={() => props.setCategory()}
+              selectCategory={props.selectCategory}
+              />
+            }
           </div>
         )
     })
