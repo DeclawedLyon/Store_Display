@@ -1,4 +1,4 @@
-.product-filter {
+.filter-component {
   display: flex;
   /* ??? */
   position: sticky;
@@ -15,12 +15,33 @@
 
 .product-style-toggle {
   cursor: pointer;
+  z-index: 10;
+  /* background-color: blue; */
+
 }
 
 .display-button-icons {
   cursor: pointer;
+  /* background-color: aqua; */
+}
+
+.display-button-icons > * {
+  cursor: pointer;
+}
+
+.display-button-icons:hover {
+  background-color: gray;
 }
 
 .display-button-lists {
+  cursor: pointer;
+  /* background-color: brown; */
+}
+
+.display-button-lists {
+  cursor: pointer;
+}
+
+.rows-button {
   cursor: pointer;
 }

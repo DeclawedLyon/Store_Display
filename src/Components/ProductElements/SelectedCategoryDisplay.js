@@ -21,7 +21,7 @@ export default function SelectedCategoryDisplay(props) {
     const specs = `${faker.commerce.productAdjective()}, ${faker.commerce.productMaterial()}` ;
     const image = fetch('https://picsum.photos/200')
 
-    console.log(image)
+    // console.log(image)
 
     const dummyProduct = {
       productName: randomProduct,
