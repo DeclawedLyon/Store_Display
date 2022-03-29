@@ -9,8 +9,8 @@ export default function ProductFilter(props) {
     <form className="product-filter">
       <input type={'text'} placeholder='Search...' ></input>
       <div className="product-style-toggle">
-        <button onClick={''}><FontAwesomeIcon className='rows-button' icon={faTableColumns} /></button>
-        <button onClick={''}><FontAwesomeIcon className='grid-button' icon={faTable} /></button>
+        <button onClick={() => props.setListDisplayToggle(true)} className="display-button-lists"><FontAwesomeIcon className='rows-button' icon={faTableColumns} /></button>
+        <button onClick={() => props.setListDisplayToggle(false)} className="display-button-icons"><FontAwesomeIcon className='grid-button' icon={faTable} /></button>
       </div>
     </form>
   )

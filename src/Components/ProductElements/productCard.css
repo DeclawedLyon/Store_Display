@@ -144,7 +144,7 @@
   height: 200px;
   min-height: 200px;
   border: 2px solid rgba(128, 128, 128, 0.452);
-  z-index: -2;
+  z-index: -3;
 }
 
 .product-card.--selected > .product-image-main {

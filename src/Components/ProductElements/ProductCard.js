@@ -17,9 +17,9 @@ export default function ProductCard(props) {
   return (
 
     <div className={`product-card ${selected ? '--selected' : ''}`} >
-      <a href='#' ><img className="product-image-main" src={props.product.image} alt="main product image" onClick={() => setSelected(true)} ></img></a>
+      <a href='#' ><img className={`product-image-main ${selected ? '--selected' : ''}`} src={props.product.image} alt="main product image" onClick={() => setSelected(true)} ></img></a>
       {selected ? <FontAwesomeIcon icon={faCircleXmark} className={'close-selected-product'} onClick={() => closeWindow()}/> : ''}
-      <main className='product-information' onClick={() => setSelected(true)} >
+      <main className={`product-information ${props.listDisplayToggle ? "--wide" : ""}`} onClick={() => setSelected(true)} >
         <div className='product-card-header'>
           <h2>{props.product.productName}</h2>
         </div>

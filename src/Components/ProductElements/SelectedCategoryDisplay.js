@@ -7,6 +7,7 @@ import './selectedCategory.css'
 
 export default function SelectedCategoryDisplay(props) {
   const [products, setProducts] = useState([])
+  const [listDisplayToggle, setListDisplayToggle] = useState(false);
 
   useEffect(() => {
     seedProducts()
@@ -39,7 +40,13 @@ export default function SelectedCategoryDisplay(props) {
     const products = [];
     while(x < 50) {
       const product = createProduct();
-      const newProduct =  <ProductCard key={x} product={product}/>
+      const newProduct = ( 
+        <ProductCard 
+          key={x} 
+          product={product} 
+          listDisplayToggle={listDisplayToggle} 
+        />
+      )
       products.push(newProduct);
       x++;
     }
@@ -51,7 +58,7 @@ export default function SelectedCategoryDisplay(props) {
     <div className="selected-category-display">
       <ProductSidebar />
       <div className="products-container">
-        <ProductFilter />
+        <ProductFilter setListDisplayToggle={setListDisplayToggle}/>
         <div className="rendered-products">
           {products}
         </div>

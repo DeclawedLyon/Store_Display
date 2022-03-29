@@ -8,6 +8,19 @@
   margin-bottom: 0.5em;
   z-index: -1;
 }
+
 .rows-button {
   transform: rotate(-90deg);
+}
+
+.product-style-toggle {
+  cursor: pointer;
+}
+
+.display-button-icons {
+  cursor: pointer;
+}
+
+.display-button-lists {
+  cursor: pointer;
 }
