@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/DeclawedLyon/Store_Display/static/css/main.f334ff23.css",
+    "main.js": "/DeclawedLyon/Store_Display/static/js/main.0f62de05.js",
+    "static/js/787.1d87dfc1.chunk.js": "/DeclawedLyon/Store_Display/static/js/787.1d87dfc1.chunk.js",
+    "static/media/seasonal.jpg": "/DeclawedLyon/Store_Display/static/media/seasonal.b78cc84392ac69846336.jpg",
+    "static/media/cedars2.jpg": "/DeclawedLyon/Store_Display/static/media/cedars2.8b0d75576d288f0c08a4.jpg",
+    "static/media/outdoor.jpg": "/DeclawedLyon/Store_Display/static/media/outdoor.5412235639bd89456e95.jpg",
+    "static/media/floral2.jpg": "/DeclawedLyon/Store_Display/static/media/floral2.4919aaecc14b543b28b8.jpg",
+    "static/media/stems.jpg": "/DeclawedLyon/Store_Display/static/media/stems.885d62141b871f0bba1a.jpg",
+    "static/media/art3.jpg": "/DeclawedLyon/Store_Display/static/media/art3.d6d3c97eeb44cd1db1ae.jpg",
+    "static/media/sale.jpg": "/DeclawedLyon/Store_Display/static/media/sale.ad1ecdbeb408901067be.jpg",
+    "static/media/homeDecor.jpg": "/DeclawedLyon/Store_Display/static/media/homeDecor.f34d488941ac6de74c5d.jpg",
+    "static/media/wallDecor.jpg": "/DeclawedLyon/Store_Display/static/media/wallDecor.e11a4ead4c371b2a291c.jpg",
+    "static/media/Logo_Silk_Plant_Warehouse_-_Colour_140x@2x.png": "/DeclawedLyon/Store_Display/static/media/Logo_Silk_Plant_Warehouse_-_Colour_140x@2x.be9f754810e7a7c06c30.png",
+    "static/media/logo.svg": "/DeclawedLyon/Store_Display/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/DeclawedLyon/Store_Display/index.html",
+    "main.f334ff23.css.map": "/DeclawedLyon/Store_Display/static/css/main.f334ff23.css.map",
+    "main.0f62de05.js.map": "/DeclawedLyon/Store_Display/static/js/main.0f62de05.js.map",
+    "787.1d87dfc1.chunk.js.map": "/DeclawedLyon/Store_Display/static/js/787.1d87dfc1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f334ff23.css",
+    "static/js/main.0f62de05.js"
+  ]
+}
